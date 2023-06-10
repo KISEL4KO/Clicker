@@ -1,0 +1,22 @@
+<?xml version="1.0" encoding="utf-8"?>
+<!-- free-icon-cpu-3716484 1 -->
+
+    <!-- drawable/free_icon_c.xml -->
+<vector
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:aapt="http://schemas.android.com/aapt"
+    android:width="144dp"
+    android:height="39dp"
+    android:viewportWidth="144"
+    android:viewportHeight="39"
+    >
+    <group>
+        <clip-path
+            android:pathData="M15 0H129C137.284 0 144 6.71573 144 15V24C144 32.2843 137.284 39 129 39H15C6.71573 39 0 32.2843 0 24V15C0 6.71573 6.71573 0 15 0Z"
+            />
+        <path
+            android:pathData="M0 0V39H144V0"
+            android:fillColor="#F8C309"
+            />
+    </group>
+</vector>
