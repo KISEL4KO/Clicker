@@ -83,6 +83,7 @@
         android:textSize="16sp"
         app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
         app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintHorizontal_bias="0.1"
         app:layout_constraintStart_toStartOf="@+id/rectangle_1"
         app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
 
@@ -120,25 +121,27 @@
         app:srcCompat="@drawable/notification" />
 
     <ImageView
-        android:id="@+id/imageView6"
-        android:layout_width="33dp"
-        android:layout_height="24dp"
-        android:layout_marginStart="52dp"
-        android:layout_marginBottom="7dp"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
-        app:layout_constraintStart_toStartOf="parent"
-        app:srcCompat="@drawable/money" />
+        android:id="@+id/imageView7"
+        android:layout_width="25dp"
+        android:layout_height="25dp"
+        android:layout_marginEnd="72dp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1"
+        app:srcCompat="@drawable/crysta" />
 
     <TextView
-        android:id="@+id/money1"
-        android:layout_width="66dp"
+        android:id="@+id/crystallmoney"
+        android:layout_width="67dp"
         android:layout_height="25dp"
-        android:layout_marginBottom="7dp"
-        android:gravity="center|left"
-        android:text="100$"
-        android:textColor="#4CAF50"
-        app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
-        app:layout_constraintStart_toEndOf="@+id/imageView6" />
+        android:gravity="center"
+        android:text="0"
+        android:textSize="16sp"
+        app:layout_constraintBottom_toBottomOf="@+id/rectangle_1"
+        app:layout_constraintEnd_toEndOf="@+id/rectangle_1"
+        app:layout_constraintHorizontal_bias="0.961"
+        app:layout_constraintStart_toStartOf="@+id/rectangle_1"
+        app:layout_constraintTop_toTopOf="@+id/rectangle_1" />
 
 </androidx.constraintlayout.widget.ConstraintLayout>
 
