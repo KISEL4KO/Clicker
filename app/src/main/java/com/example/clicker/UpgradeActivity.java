@@ -124,6 +124,7 @@ public void onBoost3(View view){
        boost1.setText("Цена: "+boostnum+"$");
        boost2.setText("Цена: "+boostnum2+"$");
        boost3.setText("Цена: "+boostnum3+"$");
+        text.setText(number+ "$");
 
     }
 }

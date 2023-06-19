@@ -99,7 +99,7 @@
         android:layout_marginStart="112dp"
         android:layout_marginBottom="16dp"
         android:gravity="center"
-        android:text="Version: 1.8(Alpha)"
+        android:text="Version: 2.0(Alpha)"
         app:layout_constraintBottom_toTopOf="@+id/rectangle_2"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintTop_toTopOf="@+id/rectangle_10"

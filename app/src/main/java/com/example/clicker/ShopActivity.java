@@ -12,11 +12,11 @@ public class ShopActivity extends AppCompatActivity {
 
     private double crystal = 0;// кристаллы
 
-    private int cpusid = 0;
+    private String cpusid = "core3";
     View a;
     View b ;
     View c;
-
+    TextView balance;
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -25,12 +25,13 @@ public class ShopActivity extends AppCompatActivity {
         a = findViewById(R.id.rectangle_10);
         b = findViewById(R.id.rectangle_17);
         c = findViewById(R.id.rectangle_16);
+        balance= findViewById(R.id.textView13);
     }
 
     public void onCPU1(View view){
         if(crystal >= 500){
             crystal = crystal-500;
-            cpusid = 1;
+            cpusid = "core5";
             a.setOnClickListener(null);
 
         }
@@ -39,7 +40,7 @@ public class ShopActivity extends AppCompatActivity {
     public void onCPU2(View view){
         if(crystal >= 1000){
             crystal = crystal-1000;
-            cpusid =  2;
+            cpusid =  "core7";
             b.setOnClickListener(null);
 
         }
@@ -48,12 +49,45 @@ public class ShopActivity extends AppCompatActivity {
     public void onCPU3(View view){
         if(crystal >= 1500){
             crystal = crystal-1500;
-            cpusid =  3;
+            cpusid =  "core9";
             c.setOnClickListener(null);
 
         }
         else {}
     }
+    public void onCPU4(View view){
+        if(crystal >= 250){
+            crystal = crystal-250;
+            cpusid =  "ryzen5";
+            c.setOnClickListener(null);
+
+        }
+        else {}
+    }
+    public void onCPU5(View view){
+        if(crystal >= 850){
+            crystal = crystal-850;
+            cpusid =  "ryzen7";
+            c.setOnClickListener(null);
+
+        }
+        else {}
+    }
+    public void onCPU6(View view){
+        if(crystal >= 1250){
+            crystal = crystal-1250;
+            cpusid =  "ryzen9";
+            c.setOnClickListener(null);
+
+        }
+        else {}
+    }
+
+
+
+
+
+
 
 
 
@@ -76,14 +110,15 @@ public class ShopActivity extends AppCompatActivity {
         SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
         SharedPreferences.Editor editor = prefs.edit();
         editor.putFloat("crystal", (float) crystal);
-        editor.putInt("cpus",cpusid);
+        editor.putString("cpus",cpusid);
         editor.apply();
     }
     protected void onResume() {
         super.onResume();
         SharedPreferences prefs = getSharedPreferences("MyPrefs", MODE_PRIVATE);
-        cpusid = prefs.getInt("cpus",0);
+        cpusid = prefs.getString("cpus","core3");
         crystal= prefs.getFloat("crystal",0);
+        balance.setText("Баланс:"+crystal);
     }
 }
 

@@ -13,7 +13,7 @@ public class InfoActivity extends AppCompatActivity {
 
    private double number = 0;
     TextView edit;
-     private int a =1;
+     private int a =0;
 
 
     @Override
